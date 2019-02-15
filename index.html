@@ -4,66 +4,105 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/main.css">
-    <title>Start Bootstrap</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <title>Freelancer - Start Bootstrap</title>
   </head>
   <body>
     <header>
-        <h3 class="titulo">Start Bootstrap</h3>
-        <nav>
-            <button class="menu"><a href="#">Portfolio</a></button>
-            <button class="menu"><a href="#">About</a></button>
-            <button class="menu"><a href="#">Contact</a></button>
+        <nav> 
+          <div class="titulo"> 
+            <h3>Start Bootstrap</h3>
+          </div>
+          <div class="menu"> 
+            <ul>
+              <li><a href="#">PORTFOLIO</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
         </nav>
     </header>
-    <div>
-      <img src="assets/images/profile.png">
-      <h1>Start Bootstrap</h1>
-      <h3>Web Developer - Graphic Artist - User Experience Designer</h3>
-    </div>
-    <div>
-      <h2>PORTFOLIO</h2>
-      <img src="assets/images/portfolio/cabin.png">
-      <img src="assets/images/portfolio/cake.png">
-      <img src="assets/images/portfolio/circus.png">
-      <img src="assets/images/portfolio/game.png">
-      <img src="assets/images/portfolio/safe.png">
-      <img src="assets/images/portfolio/submarine.png">
-    </div>
-    <div>
-      <h2>ABOUT</h2>
-      <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
-
-          Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-      <button><a href="#">Download Now!</a></button>
-    </div>
-    <div>
-      <h2>CONTACT ME</h2>
-      <form>Name</form>
-      <form>E-mail</form>
-      <form>Phone Number</form>
-      <form>Message</form>
-      <button><a href="#">Send</a></button>
-    </div>
-    <div>
-      <div>
-          <h4>LOCATION</h4>
-          <p>2215 John Daniel Drive</p> 
-          <p>Clark, MO 65243</p>
+    <section class="start">
+      <img class="icon" src="assets/images/profile.png">
+      <div class="start-title">
+        <h1>Start Bootstrap</h1>
+        <div class="starline whiteline"><i class="fas fa-star fa-2x"></i></div>
       </div>
-      <div>
-        <h4>ARROUND THE WEB</h4>
-        <button><a href="#"></a></button>
-        <button><a href="#"></a></button>
-        <button><a href="#"></a></button>
-        <button><a href="#"></a></button>
-        <button><a href="#"></a></button>
+      <p>Web Developer - Graphic Artist - User Experience Designer</p>
+    </section>
+    <section class="portfolio">
+      <h1>PORTFOLIO</h1>
+      <div class="starlineblack blackline"><i class="fas fa-star fa-2x"></i></div>
+      <div class="geral">
+        <img class="image" src="assets/images/portfolio/cabin.png">
+        <img class="image" src="assets/images/portfolio/cake.png">
+        <img class="image" src="assets/images/portfolio/circus.png">
+        <img class="image" src="assets/images/portfolio/game.png">
+        <img class="image" src="assets/images/portfolio/safe.png">
+        <img class="image" src="assets/images/portfolio/submarine.png">
       </div>
-      <div>
-        <h4>ABOUT FREELANCER</h4>
-        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="https://startbootstrap.com/">Start Bootstrap</a>.</p>
+    </section>
+    <section class="about">
+      <h1>ABOUT</h1>
+      <div class="starline whiteline"><i class="fas fa-star fa-2x"></i></div>
+      <div class="about-text">
+        <p class="firsttext">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+        <p class="secondtext">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>    
       </div>
-    </div>
-
-    <footer><h6>Copyright© Your Website 2019</h6></footer>
+      <button class="download">
+        <a href="#">
+          <i class="fas fa-download"></i>Download Now!
+        </a>
+      </button>
+    </section>
+    <section>
+      <h1>CONTACT ME</h1>
+      <div class="starlineblack blackline"><i class="fas fa-star fa-2x"></i></div>
+      <form class="single-form">
+        <label for="text">Name</label>
+        <input type="text" class="name">
+        <label for="text">Email Adress</label>
+        <input type="text" class="email">
+        <label for="text">Phone Number</label>
+        <input type="text" class="phone">
+        <label for="text">Message</label>
+        <textarea name="msg" id="" rows="6"></textarea>
+        <button class="send" type="button"><a href="#">Send</a></button>
+      </form>
+    </section>
+    <footer>
+        <div class="location">
+            <h1>LOCATION</h1>
+            <p>2215 John Daniel Drive <br> Clark, MO 65243</p>
+        </div>
+        <div class="arround">
+          <h1>ARROUND THE WEB</h1>
+          <div class="media-social">
+            <div class="icons" href="#"></a>
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="icons" href="#"></a>
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="icons" href="#"></a>
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="icons" href="#"></a>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="icons" href="#"></a>
+              <i class="fab fa-dribbble"></i>
+            </div>
+          </div>
+        </div>
+        <div class="about-freelancer">
+          <h1>ABOUT FREELANCER</h1>
+          <p>Freelance is a free to use, open source Bootstrap theme created by <a href="https://startbootstrap.com/">Start Bootstrap</a>.</p>
+        </div>
+    </footer>
+    <section class="copyright">
+      <p>Copyright© Your Website 2019</p>
+    </section>
   </body>
 </html>
